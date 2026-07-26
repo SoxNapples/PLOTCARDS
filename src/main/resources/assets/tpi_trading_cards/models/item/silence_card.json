@@ -1,0 +1,6 @@
+{
+	"parent": "tpi_trading_cards:item/card_base_square",
+	"textures": {
+		"front": "tpi_trading_cards:item/silence_card"
+	}
+}

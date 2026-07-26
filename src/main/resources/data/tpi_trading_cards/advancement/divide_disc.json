@@ -1,0 +1,27 @@
+{
+	"parent": "tpi_trading_cards:root",
+	"criteria": {
+		"crafted_disc": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:divide_disc"
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "tpi_trading_cards:divide_card"
+		},
+		"title": {
+			"text": "\"Divide\""
+		},
+		"description": {
+			"text": "Pressed your own copy of \"Divide\"."
+		}
+	},
+	"requirements": [
+		[
+			"crafted_disc"
+		]
+	]
+}

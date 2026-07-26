@@ -1,0 +1,27 @@
+{
+	"parent": "tpi_trading_cards:root",
+	"criteria": {
+		"crafted_disc": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:silence_disc"
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "tpi_trading_cards:silence_card"
+		},
+		"title": {
+			"text": "\"Silence\""
+		},
+		"description": {
+			"text": "Pressed your own copy of \"Silence\"."
+		}
+	},
+	"requirements": [
+		[
+			"crafted_disc"
+		]
+	]
+}

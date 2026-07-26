@@ -1,0 +1,54 @@
+Texture status for the 17 cards in this mod.
+
+Already supplied (real art, in this folder):
+  landon_tewers_card.png
+  josh_childress_card.png
+  ethan_yoder_card.png
+  michael_cooper_card.png
+  sox_card.png
+  card_back.png   (shared back design for every card - see card_base.json)
+  divide_card.png, forgotten_card.png, left_behind_card.png       (vol1 art)
+  closure_card.png, dont_look_away_card.png,
+    all_that_i_can_give_card.png                                  (vol2 art)
+  been_here_before_card.png, pretend_card.png, spare_me_card.png  (vol3 art)
+  silence_card.png                                                (silence-ep art)
+  you_get_one_card.png                                            (yougetone-ep art)
+
+Note: the vol1/vol2/vol3/silence-ep/yougetone-ep source images are square
+(1200x1200, 640x640, 1000x1000) rather than the 750x1050 portrait shape the
+card model expects, so they'll appear stretched on the card face rather than
+fitting naturally. Re-export/crop to 750x1050 if that stretch looks wrong
+in-game.
+
+That leaves only one card without real art:
+
+  Self-titled album (2026) song cards still needed - one 750x1050 PNG:
+    carved_card.png
+
+I did NOT generate actual artwork here on purpose: real album covers and press
+photos are copyrighted, and reproducing them as in-game textures without a
+license from the label/band is a real legal risk for a mod you plan to
+distribute. Two safe paths:
+
+1. Get permission / license art from Fearless Records or the band directly,
+   then drop the licensed art in as the textures.
+2. (Recommended for a fan mod) Draw original trading-card-style icons: a
+   simple sports-card frame (colored border matching the rarity tier below)
+   with a stylized logo/monogram or silhouette, NOT the actual copyrighted
+   photography or album cover. This is what most "band tribute" fan mods do.
+
+Suggested frame color per rarity (used for whatever art you draw, purely a
+suggestion to keep it consistent with the in-game tooltip color in
+CardRarity.java):
+  COMMON    -> gray border    (#AAAAAA)
+  UNCOMMON  -> green border   (#55FF55)
+  RARE      -> aqua border    (#55FFFF)
+  LEGENDARY -> gold border    (#FFAA00)
+  MYTHIC    -> light purple   (#FF55FF)
+
+Until a card's texture is added, that item will render as the standard
+purple/black "missing texture" checkerboard on the card's two-sided model (it
+will NOT show as the older "missing model" cube - the model/item-definition
+JSON already exists and is correct for all of these, only the PNG is
+missing). The mod still functions fully either way - items, tooltips, and
+drops all work; it just looks unfinished until real art is in place.

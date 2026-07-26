@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"tpi_trading_cards:all_that_i_can_give_card",
+		"tpi_trading_cards:all_that_i_can_give_card",
+		"tpi_trading_cards:all_that_i_can_give_card",
+		"tpi_trading_cards:all_that_i_can_give_card",
+		"tpi_trading_cards:all_that_i_can_give_card",
+		"tpi_trading_cards:all_that_i_can_give_card",
+		"tpi_trading_cards:all_that_i_can_give_card",
+		"tpi_trading_cards:all_that_i_can_give_card",
+		"tpi_trading_cards:all_that_i_can_give_card"
+	],
+	"result": {
+		"id": "minecraft:music_disc_13",
+		"components": {
+			"minecraft:jukebox_playable": "audioplayer:custom",
+			"minecraft:tooltip_display": {
+				"hidden_components": ["minecraft:jukebox_playable", "minecraft:instrument"]
+			},
+			"minecraft:custom_name": "06 - All that I Can Give",
+			"minecraft:custom_data": {
+				"audioplayer": "{\"audioplayer:audio\":{\"id\":\"5a18885a-e269-4764-be85-888f115bc6a4\"}}"
+			},
+			"!minecraft:lore": {}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"tpi_trading_cards:you_get_one_card",
+		"tpi_trading_cards:you_get_one_card",
+		"tpi_trading_cards:you_get_one_card",
+		"tpi_trading_cards:you_get_one_card",
+		"tpi_trading_cards:you_get_one_card",
+		"tpi_trading_cards:you_get_one_card",
+		"tpi_trading_cards:you_get_one_card",
+		"tpi_trading_cards:you_get_one_card",
+		"tpi_trading_cards:you_get_one_card"
+	],
+	"result": {
+		"id": "minecraft:music_disc_creator_music_box",
+		"components": {
+			"minecraft:jukebox_playable": "audioplayer:custom",
+			"minecraft:tooltip_display": {
+				"hidden_components": ["minecraft:jukebox_playable", "minecraft:instrument"]
+			},
+			"minecraft:custom_name": "11 - You Get One",
+			"minecraft:custom_data": {
+				"audioplayer": "{\"audioplayer:audio\":{\"id\":\"e448a06e-87a3-421d-83b2-4bc887bb0766\"}}"
+			},
+			"!minecraft:lore": {}
+		}
+	}
+}

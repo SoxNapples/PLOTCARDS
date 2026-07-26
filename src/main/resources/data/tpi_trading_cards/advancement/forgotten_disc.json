@@ -1,0 +1,27 @@
+{
+	"parent": "tpi_trading_cards:root",
+	"criteria": {
+		"crafted_disc": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:forgotten_disc"
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "tpi_trading_cards:forgotten_card"
+		},
+		"title": {
+			"text": "\"Forgotten\""
+		},
+		"description": {
+			"text": "Pressed your own copy of \"Forgotten\"."
+		}
+	},
+	"requirements": [
+		[
+			"crafted_disc"
+		]
+	]
+}

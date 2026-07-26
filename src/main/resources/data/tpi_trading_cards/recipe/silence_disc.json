@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"tpi_trading_cards:silence_card",
+		"tpi_trading_cards:silence_card",
+		"tpi_trading_cards:silence_card",
+		"tpi_trading_cards:silence_card",
+		"tpi_trading_cards:silence_card",
+		"tpi_trading_cards:silence_card",
+		"tpi_trading_cards:silence_card",
+		"tpi_trading_cards:silence_card",
+		"tpi_trading_cards:silence_card"
+	],
+	"result": {
+		"id": "minecraft:music_disc_creator_music_box",
+		"components": {
+			"minecraft:jukebox_playable": "audioplayer:custom",
+			"minecraft:tooltip_display": {
+				"hidden_components": ["minecraft:jukebox_playable", "minecraft:instrument"]
+			},
+			"minecraft:custom_name": "10 - Silence",
+			"minecraft:custom_data": {
+				"audioplayer": "{\"audioplayer:audio\":{\"id\":\"3b84a103-de9e-47f4-98bb-25c34e80aa38\"}}"
+			},
+			"!minecraft:lore": {}
+		}
+	}
+}

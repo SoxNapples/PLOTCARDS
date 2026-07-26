@@ -1,0 +1,27 @@
+{
+	"parent": "tpi_trading_cards:root",
+	"criteria": {
+		"crafted_disc": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:carved_disc"
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "tpi_trading_cards:carved_card"
+		},
+		"title": {
+			"text": "\"Carved\""
+		},
+		"description": {
+			"text": "Pressed your own copy of \"Carved\"."
+		}
+	},
+	"requirements": [
+		[
+			"crafted_disc"
+		]
+	]
+}

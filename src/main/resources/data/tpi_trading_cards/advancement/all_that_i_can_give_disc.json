@@ -1,0 +1,27 @@
+{
+	"parent": "tpi_trading_cards:root",
+	"criteria": {
+		"crafted_disc": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:all_that_i_can_give_disc"
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "tpi_trading_cards:all_that_i_can_give_card"
+		},
+		"title": {
+			"text": "\"All That I Can Give\""
+		},
+		"description": {
+			"text": "Pressed your own copy of \"All That I Can Give\"."
+		}
+	},
+	"requirements": [
+		[
+			"crafted_disc"
+		]
+	]
+}

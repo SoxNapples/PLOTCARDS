@@ -1,0 +1,28 @@
+{
+	"parent": "tpi_trading_cards:root",
+	"criteria": {
+		"crafted_microphone": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:microphone"
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "tpi_trading_cards:microphone"
+		},
+		"title": {
+			"text": "Crowd Control",
+			"color": "light_purple"
+		},
+		"description": {
+			"text": "Craft a microphone."
+		}
+	},
+	"requirements": [
+		[
+			"crafted_microphone"
+		]
+	]
+}

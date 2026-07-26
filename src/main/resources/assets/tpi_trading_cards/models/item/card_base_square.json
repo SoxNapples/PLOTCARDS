@@ -1,0 +1,47 @@
+{
+	"gui_light": "front",
+	"textures": {
+		"particle": "tpi_trading_cards:item/card_back",
+		"back": "tpi_trading_cards:item/card_back"
+	},
+	"elements": [
+		{
+			"from": [2.3, 2.3, 7.5],
+			"to": [13.7, 13.7, 8.5],
+			"faces": {
+				"north": { "uv": [0, 0, 16, 16], "texture": "#back" },
+				"south": { "uv": [0, 0, 16, 16], "texture": "#front" },
+				"east":  { "uv": [0, 0, 16, 16], "texture": "#back" },
+				"west":  { "uv": [0, 0, 16, 16], "texture": "#back" },
+				"up":    { "uv": [0, 0, 16, 16], "texture": "#back" },
+				"down":  { "uv": [0, 0, 16, 16], "texture": "#back" }
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, -90, 55],
+			"translation": [0, 4.0, 0.5],
+			"scale": [1.15, 1.15, 1.15]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [0, 90, -55],
+			"translation": [0, 4.0, 0.5],
+			"scale": [1.15, 1.15, 1.15]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -90, 25],
+			"translation": [1.13, 4.5, 2.5],
+			"scale": [1.15, 1.15, 1.15]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, 90, -25],
+			"translation": [1.13, 4.5, 2.5],
+			"scale": [1.15, 1.15, 1.15]
+		},
+		"fixed": {
+			"rotation": [0, 180, 0],
+			"scale": [1, 1, 1]
+		}
+	}
+}

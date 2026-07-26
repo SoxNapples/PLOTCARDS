@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"tpi_trading_cards:divide_card",
+		"tpi_trading_cards:divide_card",
+		"tpi_trading_cards:divide_card",
+		"tpi_trading_cards:divide_card",
+		"tpi_trading_cards:divide_card",
+		"tpi_trading_cards:divide_card",
+		"tpi_trading_cards:divide_card",
+		"tpi_trading_cards:divide_card",
+		"tpi_trading_cards:divide_card"
+	],
+	"result": {
+		"id": "minecraft:music_disc_lava_chicken",
+		"components": {
+			"minecraft:jukebox_playable": "audioplayer:custom",
+			"minecraft:tooltip_display": {
+				"hidden_components": ["minecraft:jukebox_playable", "minecraft:instrument"]
+			},
+			"minecraft:custom_name": "01 - Divide",
+			"minecraft:custom_data": {
+				"audioplayer": "{\"audioplayer:audio\":{\"id\":\"b2893436-f39a-4cb1-98a0-622236c4a5ca\"}}"
+			},
+			"!minecraft:lore": {}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"tpi_trading_cards:carved_card",
+		"tpi_trading_cards:carved_card",
+		"tpi_trading_cards:carved_card",
+		"tpi_trading_cards:carved_card",
+		"tpi_trading_cards:carved_card",
+		"tpi_trading_cards:carved_card",
+		"tpi_trading_cards:carved_card",
+		"tpi_trading_cards:carved_card",
+		"tpi_trading_cards:carved_card"
+	],
+	"result": {
+		"id": "minecraft:music_disc_ward",
+		"components": {
+			"minecraft:jukebox_playable": "audioplayer:custom",
+			"minecraft:tooltip_display": {
+				"hidden_components": ["minecraft:jukebox_playable", "minecraft:instrument"]
+			},
+			"minecraft:custom_name": "12 - Carved",
+			"minecraft:custom_data": {
+				"audioplayer": "{\"audioplayer:audio\":{\"id\":\"c1947938-178f-432b-bd47-9d0e2e96d6fa\"}}"
+			},
+			"!minecraft:lore": {}
+		}
+	}
+}

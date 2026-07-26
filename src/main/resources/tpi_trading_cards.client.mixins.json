@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "net.tpi.tradingcards.mixin.client",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"ItemInHandRendererMixin",
+		"ItemFrameRenderStateMixin",
+		"ItemFrameRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

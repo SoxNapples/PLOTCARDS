@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"tpi_trading_cards:pretend_card",
+		"tpi_trading_cards:pretend_card",
+		"tpi_trading_cards:pretend_card",
+		"tpi_trading_cards:pretend_card",
+		"tpi_trading_cards:pretend_card",
+		"tpi_trading_cards:pretend_card",
+		"tpi_trading_cards:pretend_card",
+		"tpi_trading_cards:pretend_card",
+		"tpi_trading_cards:pretend_card"
+	],
+	"result": {
+		"id": "minecraft:music_disc_otherside",
+		"components": {
+			"minecraft:jukebox_playable": "audioplayer:custom",
+			"minecraft:tooltip_display": {
+				"hidden_components": ["minecraft:jukebox_playable", "minecraft:instrument"]
+			},
+			"minecraft:custom_name": "08 - Pretend",
+			"minecraft:custom_data": {
+				"audioplayer": "{\"audioplayer:audio\":{\"id\":\"0ae21206-7467-4f93-bfc7-e05354007bbd\"}}"
+			},
+			"!minecraft:lore": {}
+		}
+	}
+}

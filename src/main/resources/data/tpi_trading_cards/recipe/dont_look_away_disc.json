@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"tpi_trading_cards:dont_look_away_card",
+		"tpi_trading_cards:dont_look_away_card",
+		"tpi_trading_cards:dont_look_away_card",
+		"tpi_trading_cards:dont_look_away_card",
+		"tpi_trading_cards:dont_look_away_card",
+		"tpi_trading_cards:dont_look_away_card",
+		"tpi_trading_cards:dont_look_away_card",
+		"tpi_trading_cards:dont_look_away_card",
+		"tpi_trading_cards:dont_look_away_card"
+	],
+	"result": {
+		"id": "minecraft:music_disc_13",
+		"components": {
+			"minecraft:jukebox_playable": "audioplayer:custom",
+			"minecraft:tooltip_display": {
+				"hidden_components": ["minecraft:jukebox_playable", "minecraft:instrument"]
+			},
+			"minecraft:custom_name": "05 - Don't Look Away",
+			"minecraft:custom_data": {
+				"audioplayer": "{\"audioplayer:audio\":{\"id\":\"671052b2-0729-455e-9c64-aafba34a64bf\"}}"
+			},
+			"!minecraft:lore": {}
+		}
+	}
+}

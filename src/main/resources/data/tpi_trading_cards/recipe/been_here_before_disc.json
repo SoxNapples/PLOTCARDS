@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"tpi_trading_cards:been_here_before_card",
+		"tpi_trading_cards:been_here_before_card",
+		"tpi_trading_cards:been_here_before_card",
+		"tpi_trading_cards:been_here_before_card",
+		"tpi_trading_cards:been_here_before_card",
+		"tpi_trading_cards:been_here_before_card",
+		"tpi_trading_cards:been_here_before_card",
+		"tpi_trading_cards:been_here_before_card",
+		"tpi_trading_cards:been_here_before_card"
+	],
+	"result": {
+		"id": "minecraft:music_disc_otherside",
+		"components": {
+			"minecraft:jukebox_playable": "audioplayer:custom",
+			"minecraft:tooltip_display": {
+				"hidden_components": ["minecraft:jukebox_playable", "minecraft:instrument"]
+			},
+			"minecraft:custom_name": "07 - Been Here Before",
+			"minecraft:custom_data": {
+				"audioplayer": "{\"audioplayer:audio\":{\"id\":\"fc3156a3-6ea4-4ac7-83e7-d5c92701a738\"}}"
+			},
+			"!minecraft:lore": {}
+		}
+	}
+}

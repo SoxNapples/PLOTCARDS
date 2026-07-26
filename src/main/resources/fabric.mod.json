@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "tpi_trading_cards",
+	"version": "${version}",
+	"name": "Plotcards",
+	"description": "Adds collectible trading cards themed around the band The Plot in You, dropped rarely from hostile mobs.",
+	"authors": [
+		"Tuxnode"
+	],
+	"contact": {
+		"homepage": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tpi_trading_cards/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.tpi.tradingcards.TPITradingCards"
+		]
+	},
+	"mixins": [
+		{
+			"config": "tpi_trading_cards.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"fabric-api": "*",
+		"java": ">=25"
+	}
+}

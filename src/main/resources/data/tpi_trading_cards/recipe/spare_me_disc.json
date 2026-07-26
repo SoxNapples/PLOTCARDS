@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"tpi_trading_cards:spare_me_card",
+		"tpi_trading_cards:spare_me_card",
+		"tpi_trading_cards:spare_me_card",
+		"tpi_trading_cards:spare_me_card",
+		"tpi_trading_cards:spare_me_card",
+		"tpi_trading_cards:spare_me_card",
+		"tpi_trading_cards:spare_me_card",
+		"tpi_trading_cards:spare_me_card",
+		"tpi_trading_cards:spare_me_card"
+	],
+	"result": {
+		"id": "minecraft:music_disc_otherside",
+		"components": {
+			"minecraft:jukebox_playable": "audioplayer:custom",
+			"minecraft:tooltip_display": {
+				"hidden_components": ["minecraft:jukebox_playable", "minecraft:instrument"]
+			},
+			"minecraft:custom_name": "09 - Spare Me",
+			"minecraft:custom_data": {
+				"audioplayer": "{\"audioplayer:audio\":{\"id\":\"debba4d8-0e8a-4be4-8fbf-18f6f8b532e9\"}}"
+			},
+			"!minecraft:lore": {}
+		}
+	}
+}

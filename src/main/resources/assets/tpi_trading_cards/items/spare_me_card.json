@@ -1,0 +1,6 @@
+{
+	"model": {
+		"type": "minecraft:model",
+		"model": "tpi_trading_cards:item/spare_me_card"
+	}
+}

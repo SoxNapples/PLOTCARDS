@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"tpi_trading_cards:left_behind_card",
+		"tpi_trading_cards:left_behind_card",
+		"tpi_trading_cards:left_behind_card",
+		"tpi_trading_cards:left_behind_card",
+		"tpi_trading_cards:left_behind_card",
+		"tpi_trading_cards:left_behind_card",
+		"tpi_trading_cards:left_behind_card",
+		"tpi_trading_cards:left_behind_card",
+		"tpi_trading_cards:left_behind_card"
+	],
+	"result": {
+		"id": "minecraft:music_disc_lava_chicken",
+		"components": {
+			"minecraft:jukebox_playable": "audioplayer:custom",
+			"minecraft:tooltip_display": {
+				"hidden_components": ["minecraft:jukebox_playable", "minecraft:instrument"]
+			},
+			"minecraft:custom_name": "02 - Left Behind",
+			"minecraft:custom_data": {
+				"audioplayer": "{\"audioplayer:audio\":{\"id\":\"d1bfc639-2780-44af-828c-803e16082ac0\"}}"
+			},
+			"!minecraft:lore": {}
+		}
+	}
+}

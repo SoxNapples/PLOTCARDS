@@ -1,0 +1,33 @@
+{
+	"criteria": {
+		"crafting_table": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": "minecraft:crafting_table"
+					}
+				]
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "minecraft:music_disc_13"
+		},
+		"title": {
+			"text": "The Plot in You"
+		},
+		"description": {
+			"text": "Bring the band's music into your world."
+		},
+		"background": "minecraft:gui/advancements/backgrounds/stone",
+		"show_toast": false,
+		"announce_to_chat": false
+	},
+	"requirements": [
+		[
+			"crafting_table"
+		]
+	]
+}

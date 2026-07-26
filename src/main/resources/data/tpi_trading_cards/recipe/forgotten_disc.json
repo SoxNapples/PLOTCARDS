@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"tpi_trading_cards:forgotten_card",
+		"tpi_trading_cards:forgotten_card",
+		"tpi_trading_cards:forgotten_card",
+		"tpi_trading_cards:forgotten_card",
+		"tpi_trading_cards:forgotten_card",
+		"tpi_trading_cards:forgotten_card",
+		"tpi_trading_cards:forgotten_card",
+		"tpi_trading_cards:forgotten_card",
+		"tpi_trading_cards:forgotten_card"
+	],
+	"result": {
+		"id": "minecraft:music_disc_lava_chicken",
+		"components": {
+			"minecraft:jukebox_playable": "audioplayer:custom",
+			"minecraft:tooltip_display": {
+				"hidden_components": ["minecraft:jukebox_playable", "minecraft:instrument"]
+			},
+			"minecraft:custom_name": "03 - Forgotten",
+			"minecraft:custom_data": {
+				"audioplayer": "{\"audioplayer:audio\":{\"id\":\"b2d4f242-aadf-4e58-a98c-4739c43319bb\"}}"
+			},
+			"!minecraft:lore": {}
+		}
+	}
+}

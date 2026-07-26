@@ -1,0 +1,103 @@
+{
+	"parent": "tpi_trading_cards:root",
+	"criteria": {
+		"divide": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:divide_disc"
+			}
+		},
+		"left_behind": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:left_behind_disc"
+			}
+		},
+		"forgotten": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:forgotten_disc"
+			}
+		},
+		"closure": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:closure_disc"
+			}
+		},
+		"dont_look_away": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:dont_look_away_disc"
+			}
+		},
+		"been_here_before": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:been_here_before_disc"
+			}
+		},
+		"pretend": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:pretend_disc"
+			}
+		},
+		"all_that_i_can_give": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:all_that_i_can_give_disc"
+			}
+		},
+		"spare_me": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:spare_me_disc"
+			}
+		},
+		"silence": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:silence_disc"
+			}
+		},
+		"you_get_one": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:you_get_one_disc"
+			}
+		},
+		"carved": {
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "tpi_trading_cards:carved_disc"
+			}
+		}
+	},
+	"display": {
+		"icon": {
+			"id": "minecraft:jukebox"
+		},
+		"title": {
+			"text": "The Full Discography"
+		},
+		"description": {
+			"text": "Pressed all 12 tracks from the self-titled album."
+		},
+		"frame": "challenge"
+	},
+	"requirements": [
+		["divide"],
+		["left_behind"],
+		["forgotten"],
+		["closure"],
+		["dont_look_away"],
+		["been_here_before"],
+		["pretend"],
+		["all_that_i_can_give"],
+		["spare_me"],
+		["silence"],
+		["you_get_one"],
+		["carved"]
+	]
+}

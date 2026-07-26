@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		"tpi_trading_cards:closure_card",
+		"tpi_trading_cards:closure_card",
+		"tpi_trading_cards:closure_card",
+		"tpi_trading_cards:closure_card",
+		"tpi_trading_cards:closure_card",
+		"tpi_trading_cards:closure_card",
+		"tpi_trading_cards:closure_card",
+		"tpi_trading_cards:closure_card",
+		"tpi_trading_cards:closure_card"
+	],
+	"result": {
+		"id": "minecraft:music_disc_13",
+		"components": {
+			"minecraft:jukebox_playable": "audioplayer:custom",
+			"minecraft:tooltip_display": {
+				"hidden_components": ["minecraft:jukebox_playable", "minecraft:instrument"]
+			},
+			"minecraft:custom_name": "04 - Closure",
+			"minecraft:custom_data": {
+				"audioplayer": "{\"audioplayer:audio\":{\"id\":\"f2bc9b37-c725-4b31-92e5-03dabf6f9738\"}}"
+			},
+			"!minecraft:lore": {}
+		}
+	}
+}

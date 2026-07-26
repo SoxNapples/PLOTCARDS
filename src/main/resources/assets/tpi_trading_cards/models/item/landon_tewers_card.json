@@ -1,0 +1,6 @@
+{
+	"parent": "tpi_trading_cards:item/card_base",
+	"textures": {
+		"front": "tpi_trading_cards:item/landon_tewers_card"
+	}
+}
