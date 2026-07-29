@@ -16,6 +16,9 @@
 	"entrypoints": {
 		"main": [
 			"net.tpi.tradingcards.TPITradingCards"
+		],
+		"voicechat": [
+			"net.tpi.tradingcards.voicechat.TpiVoicechatPlugin"
 		]
 	},
 	"mixins": [
@@ -29,5 +32,8 @@
 		"minecraft": "~26.2",
 		"fabric-api": "*",
 		"java": ">=25"
+	},
+	"suggests": {
+		"voicechat": ">=2.6.20"
 	}
 }

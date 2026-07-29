@@ -12,6 +12,7 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+	maven { url "https://mvn.0110.be/releases" }
 }
 
 dependencies {
@@ -21,6 +22,28 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+	// Simple Voice Chat's addon API (de.maxhenkel.voicechat.api.*) - vendored locally in libs/ (extracted
+	// straight from the installed voicechat-fabric-2.6.20+26.2.jar; maven.maxhenkel.de doesn't actually
+	// publish this artifact standalone, that repo 404s on it) rather than guessed at from a Maven coordinate.
+	// It's a plain, Minecraft-mappings-agnostic interface library (everything entity/player-shaped is passed
+	// as Object), so it needs no remapping - a normal compileOnly, not a mod*** Loom configuration. Soft
+	// dependency: our plugin class is only ever loaded by Simple Voice Chat itself (via the "voicechat"
+	// entrypoint in fabric.mod.json), so nothing breaks if a server doesn't have SVC installed.
+	//
+	// libs/*.jar is gitignored (not ours to redistribute) - if you're building this fresh without it, get any
+	// voicechat-fabric-<version>.jar (e.g. from your own mods folder) and regenerate it (unzip's "*" glob
+	// doesn't recurse into subfolders, so extract everything first rather than a single api/* pattern):
+	//   unzip voicechat-fabric-*.jar -d full_tmp
+	//   jar cf libs/voicechat-api-${voicechat_api_version}.jar -C full_tmp de/maxhenkel/voicechat/api
+	compileOnly files("libs/voicechat-api-${project.voicechat_api_version}.jar")
+
+	// TarsosDSP - pitch detection (Yin) and pitch shifting (a phase-vocoder PitchShifter), used for the
+	// microphone's autotune voice effect. GPL-3.0 licensed - see README's Licensing section: bundling this
+	// (via "include" below, Fabric Loom's jar-in-jar mechanism) means the distributed mod jar as a whole is
+	// subject to GPL-3.0 terms, even though our own source stays CC0.
+	implementation "be.tarsos.dsp:core:${project.tarsosdsp_version}"
+	include "be.tarsos.dsp:core:${project.tarsosdsp_version}"
 }
 
 processResources {
