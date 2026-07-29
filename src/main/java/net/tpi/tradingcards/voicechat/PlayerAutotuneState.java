@@ -1,12 +1,12 @@
 package net.tpi.tradingcards.voicechat;
 
+import java.lang.reflect.Method;
+
 import be.tarsos.dsp.AudioEvent;
 import be.tarsos.dsp.PitchShifter;
 import be.tarsos.dsp.io.TarsosDSPAudioFormat;
 import be.tarsos.dsp.pitch.Yin;
 import de.maxhenkel.voicechat.api.VoicechatApi;
-import de.maxhenkel.voicechat.api.opus.OpusDecoder;
-import de.maxhenkel.voicechat.api.opus.OpusEncoder;
 
 /**
  * Per-player Opus codec + TarsosDSP pitch-shifter state, kept alive for as
@@ -31,16 +31,20 @@ final class PlayerAutotuneState {
 	 */
 	private static final int DETECTION_WINDOW_SIZE = FRAME_SIZE * 2;
 
-	final OpusDecoder decoder;
-	final OpusEncoder encoder;
+	private final Object decoder;
+	private final Object encoder;
+	private final Method decoderMethod;
+	private final Method encoderMethod;
 	final PitchShifter pitchShifter;
 	final Yin pitchDetector;
 	final AudioEvent audioEvent;
 	final float[] detectionWindow = new float[DETECTION_WINDOW_SIZE];
 
 	PlayerAutotuneState(VoicechatApi api) {
-		this.decoder = api.createDecoder();
-		this.encoder = api.createEncoder();
+		this.decoder = createCodec(api, "createDecoder");
+		this.encoder = createCodec(api, "createEncoder");
+		this.decoderMethod = findMethod(this.decoder, "decode", byte[].class);
+		this.encoderMethod = findMethod(this.encoder, "encode", short[].class);
 		// overlap=0: each 960-sample frame is its own independent analysis window, processed exactly once as it
 		// arrives - trades a bit of smoothing between frames for staying perfectly in sync with SVC's frame rate
 		// (no internal buffering/latency drift).
@@ -50,8 +54,45 @@ final class PlayerAutotuneState {
 		this.audioEvent = new AudioEvent(format);
 	}
 
+	short[] decode(byte[] encodedData) {
+		try {
+			return (short[]) decoderMethod.invoke(decoder, (Object) encodedData);
+		} catch (ReflectiveOperationException e) {
+			throw new IllegalStateException("Unable to decode microphone audio with the installed voice-chat API", e);
+		}
+	}
+
+	byte[] encode(short[] pcm) {
+		try {
+			return (byte[]) encoderMethod.invoke(encoder, (Object) pcm);
+		} catch (ReflectiveOperationException e) {
+			throw new IllegalStateException("Unable to encode microphone audio with the installed voice-chat API", e);
+		}
+	}
+
+	private static Object createCodec(VoicechatApi api, String methodName) {
+		try {
+			Method method = VoicechatApi.class.getMethod(methodName);
+			return method.invoke(api);
+		} catch (ReflectiveOperationException e) {
+			throw new IllegalStateException("The installed voice-chat API does not provide " + methodName + "()", e);
+		}
+	}
+
+	private static Method findMethod(Object codec, String methodName, Class<?> parameterType) {
+		try {
+			return codec.getClass().getMethod(methodName, parameterType);
+		} catch (NoSuchMethodException e) {
+			throw new IllegalStateException("The installed voice-chat API codec object does not provide " + methodName + "(" + parameterType.getSimpleName() + ")", e);
+		}
+	}
+
 	void close() {
-		decoder.close();
-		encoder.close();
+		try {
+			decoder.getClass().getMethod("close").invoke(decoder);
+			encoder.getClass().getMethod("close").invoke(encoder);
+		} catch (ReflectiveOperationException e) {
+			throw new IllegalStateException("Unable to close voice-chat codec objects", e);
+		}
 	}
 }

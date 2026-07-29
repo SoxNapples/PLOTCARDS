@@ -66,9 +66,9 @@ public class TpiVoicechatPlugin implements VoicechatPlugin {
 
 		MicrophonePacket packet = event.getPacket();
 		PlayerAutotuneState state = autotuneStates.computeIfAbsent(voicechatPlayer.getUuid(), id -> new PlayerAutotuneState(api));
-		short[] pcm = state.decoder.decode(packet.getOpusEncodedData());
+		short[] pcm = state.decode(packet.getOpusEncodedData());
 		AutotuneFilter.apply(pcm, state);
-		packet.setOpusEncodedData(state.encoder.encode(pcm));
+		packet.setOpusEncodedData(state.encode(pcm));
 	}
 
 	/** Frees the player's Opus codec state once they leave - otherwise it'd leak for the life of the server. */
