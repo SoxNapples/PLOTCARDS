@@ -120,12 +120,10 @@ with the right name on it.
 
 A craftable prop for the true frontman experience:
 
-```
-  W
- CAC
-  S
-```
-`W` = any wool color, `C` = copper ingot, `A` = amethyst shard, `S` = stick.
+![Microphone crafting recipe: any wool on top, copper ingot on each side, amethyst shard in the middle, stick on the bottom, yielding a microphone](docs/images/microphone_recipe.png)
+
+Any wool color works on top — copper ingot on each side, amethyst shard in
+the middle, stick on the bottom.
 
 - **Place it** on a floor, wall, or ceiling and it orients itself to match
   the surface, just like an End Rod.
