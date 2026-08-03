@@ -24,9 +24,5 @@ classes/
 # fabric
 run/
 
-# Vendored third-party jars (e.g. voicechat-api, extracted from an installed mod's own jar since it isn't
-# published standalone anywhere) - not ours to redistribute, see build.gradle for how to regenerate them.
-libs/*.jar
-
 # logs
 *.log

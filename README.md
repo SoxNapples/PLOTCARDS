@@ -129,7 +129,7 @@ the middle, stick on the bottom.
   the surface, just like an End Rod.
 - **Right-click** while holding it (not aimed at a surface) to "sing" into
   it — plays the eating-style animation for a few seconds, no item consumed.
-- **Hit an entity with it** and they go flying — 3 damage plus a huge
+- **Hit an entity with it** and they go flying — 5 damage plus a huge
   knockback impulse, roughly 10 blocks on open ground (less over rough
   terrain or against knockback-resistant mobs, same physics as any other
   knockback).
@@ -138,12 +138,6 @@ the middle, stick on the bottom.
   Mending, and Curse of Vanishing all apply.
 - **Can't break blocks** — same restriction real swords have, so swinging
   it at something (or clicking in creative) never destroys terrain.
-- **Autotune voice effect**: with [Simple Voice Chat](https://modrepo.de/minecraft/voicechat/overview)
-  also installed, holding the mic in either hand while you talk detects your
-  pitch and snaps it instantly to the nearest note — the classic hard-snap
-  "autotune" sound everyone nearby hears you singing through. No SVC
-  installed, no effect, no crash either way — this is a soft integration
-  (see `net.tpi.tradingcards.voicechat`).
 
 ## Achievements
 
@@ -180,17 +174,3 @@ editing.
 
 Requires JDK 25. `./gradlew build` from the repo root; the jar lands in
 `build/libs/`.
-
-The microphone's autotune effect depends on [Simple Voice Chat's](https://modrepo.de/minecraft/voicechat/overview)
-addon API, which isn't published as a standalone Maven artifact anywhere -
-`build.gradle` vendors it locally from an installed copy of the mod (see the
-comment there for how to regenerate `libs/voicechat-api-<version>.jar` if
-you're building on a machine that's never had it).
-
-## Licensing
-
-This mod's own code is CC0-1.0 (see `LICENSE`). It bundles
-[TarsosDSP](https://github.com/JorenSix/TarsosDSP) (pitch detection and
-shifting for the microphone's autotune effect), which is GPL-3.0 licensed -
-as a result, the *distributed jar* as a whole is subject to GPL-3.0 terms,
-even though the original source in this repo remains CC0.

@@ -60,9 +60,9 @@ public final class ModBlocks {
 		// mining stays as slow as bare hands too, since defaultMiningSpeed matches the unarmed default).
 		Tool noMiningTool = new Tool(List.of(), 1.0F, 1, false);
 
-		// Base player attack damage is 1.0 - this ADD_VALUE modifier brings a hit up to 3.0 total.
+		// Base player attack damage is 1.0 - this ADD_VALUE modifier brings a hit up to 5.0 total.
 		ItemAttributeModifiers attackDamage = ItemAttributeModifiers.builder()
-				.add(Attributes.ATTACK_DAMAGE, new AttributeModifier(Item.BASE_ATTACK_DAMAGE_ID, 2.0, Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
+				.add(Attributes.ATTACK_DAMAGE, new AttributeModifier(Item.BASE_ATTACK_DAMAGE_ID, 4.0, Operation.ADD_VALUE), EquipmentSlotGroup.MAINHAND)
 				.build();
 
 		Item.Properties properties = new Item.Properties()
