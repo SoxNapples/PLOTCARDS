@@ -144,7 +144,9 @@ Tune or disable natural spawning with `bandMemberSpawnWeight` in
 
 ## Captain Sox
 
-A black-and-white tuxedo cat in a pirate hat, the mascot from the Sox card.
+A black-and-white tuxedo cat in a captain's pirate hat (black half-moon with
+gold trim, skull and crossbones, red band and ribbon, ears poking out in front),
+the mascot from the Sox card.
 He's a real Minecraft cat underneath, so everything cats do, he does.
 
 - **Spawning:** occasionally on grass anywhere in the overworld, day or night
