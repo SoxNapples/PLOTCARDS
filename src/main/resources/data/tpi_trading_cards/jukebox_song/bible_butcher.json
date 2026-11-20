@@ -1,0 +1,8 @@
+{
+	"comparator_output": 8,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.bible_butcher"
+	},
+	"length_in_seconds": 202.9,
+	"sound_event": "tpi_trading_cards:music_disc.bible_butcher"
+}

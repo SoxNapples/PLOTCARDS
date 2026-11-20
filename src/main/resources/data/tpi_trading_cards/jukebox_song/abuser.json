@@ -1,0 +1,8 @@
+{
+	"comparator_output": 4,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.abuser"
+	},
+	"length_in_seconds": 147.5,
+	"sound_event": "tpi_trading_cards:music_disc.abuser"
+}

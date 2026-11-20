@@ -1,0 +1,8 @@
+{
+	"comparator_output": 2,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.small_face_first_born"
+	},
+	"length_in_seconds": 176.9,
+	"sound_event": "tpi_trading_cards:music_disc.small_face_first_born"
+}

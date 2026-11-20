@@ -1,0 +1,8 @@
+{
+	"comparator_output": 8,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.die_like_your_brothers"
+	},
+	"length_in_seconds": 204.4,
+	"sound_event": "tpi_trading_cards:music_disc.die_like_your_brothers"
+}

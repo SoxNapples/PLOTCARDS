@@ -1,0 +1,8 @@
+{
+	"comparator_output": 2,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.fall_again"
+	},
+	"length_in_seconds": 194.7,
+	"sound_event": "tpi_trading_cards:music_disc.fall_again"
+}

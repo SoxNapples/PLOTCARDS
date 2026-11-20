@@ -1,0 +1,8 @@
+{
+	"comparator_output": 11,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.living_your_dream"
+	},
+	"length_in_seconds": 143.0,
+	"sound_event": "tpi_trading_cards:music_disc.living_your_dream"
+}

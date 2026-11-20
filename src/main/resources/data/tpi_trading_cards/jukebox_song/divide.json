@@ -3,6 +3,6 @@
 	"description": {
 		"translate": "jukebox_song.tpi_trading_cards.divide"
 	},
-	"length_in_seconds": 180.0,
+	"length_in_seconds": 208.8,
 	"sound_event": "tpi_trading_cards:music_disc.divide"
 }

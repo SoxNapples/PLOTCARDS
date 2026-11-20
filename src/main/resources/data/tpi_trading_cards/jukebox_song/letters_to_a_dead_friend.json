@@ -1,0 +1,8 @@
+{
+	"comparator_output": 1,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.letters_to_a_dead_friend"
+	},
+	"length_in_seconds": 234.5,
+	"sound_event": "tpi_trading_cards:music_disc.letters_to_a_dead_friend"
+}

@@ -1,0 +1,8 @@
+{
+	"comparator_output": 2,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.dear_old_friend"
+	},
+	"length_in_seconds": 239.5,
+	"sound_event": "tpi_trading_cards:music_disc.dear_old_friend"
+}

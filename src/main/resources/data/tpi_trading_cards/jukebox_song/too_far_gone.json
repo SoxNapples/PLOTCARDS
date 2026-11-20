@@ -1,0 +1,8 @@
+{
+	"comparator_output": 4,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.too_far_gone"
+	},
+	"length_in_seconds": 234.0,
+	"sound_event": "tpi_trading_cards:music_disc.too_far_gone"
+}

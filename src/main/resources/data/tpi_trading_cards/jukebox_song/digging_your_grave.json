@@ -1,0 +1,8 @@
+{
+	"comparator_output": 3,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.digging_your_grave"
+	},
+	"length_in_seconds": 198.5,
+	"sound_event": "tpi_trading_cards:music_disc.digging_your_grave"
+}

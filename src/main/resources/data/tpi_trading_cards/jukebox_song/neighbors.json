@@ -1,0 +1,8 @@
+{
+	"comparator_output": 6,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.neighbors"
+	},
+	"length_in_seconds": 198.3,
+	"sound_event": "tpi_trading_cards:music_disc.neighbors"
+}

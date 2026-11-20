@@ -104,18 +104,25 @@ Legendary song card sitting in your inventory stacks that song's buff on
 top automatically. It doesn't stack twice from multiple song cards — just
 the single best one counts.
 
-## Pressing a record
+## Music discs
 
-Collect **nine copies of the same song card** and combine them at a
-crafting table to press that song into its own music disc. Drop it in a
-jukebox like any vanilla disc and it plays the song — the audio is built
-into the mod, so no Audioplayer or voice chat mod is needed. The disc's
-tooltip and the jukebox "Now Playing" line show the song title, and
-comparators read a different signal strength per track (1–12, in album order).
+The mod has a music disc for **74 songs** — the band's discography from the
+*Wife Beater* EP (2009) through the self-titled album (2026). Discs play in
+any jukebox like vanilla ones, no Audioplayer or voice chat mod needed. The
+tooltip shows the song plus the release it's from, the label color shows the
+release, and comparators read the track number (1–15).
 
-Song audio lives in `src/main/resources/assets/tpi_trading_cards/sounds/records/<song>.ogg`
-(Ogg Vorbis). Each song's length is set in
-`src/main/resources/data/tpi_trading_cards/jukebox_song/<song>.json`.
+**Pressing a record:** collect **nine copies of the same song card** and
+combine them at a crafting table to press that song's disc. Only the 12
+self-titled-album songs have cards, so only those 12 discs are craftable for
+now; the rest are in the creative tab (or `/give`).
+
+**Audio isn't in this repo.** The songs are copyrighted, so the `.ogg` files
+are git-ignored and only go into privately built jars. Without them the discs
+still exist and spin in a jukebox, just silently. Audio goes in
+`src/main/resources/assets/tpi_trading_cards/sounds/records/<song_id>.ogg`
+(mono Ogg Vorbis), with each song's length in
+`src/main/resources/data/tpi_trading_cards/jukebox_song/<song_id>.json`.
 
 ## The microphone
 
@@ -143,9 +150,9 @@ the middle, stick on the bottom.
 ## Achievements
 
 - **The Plot in You** — craft a crafting table (the root achievement).
-- One achievement per song, awarded the first time you press that song's
-  disc (12 total).
-- **The Full Discography** — press all 12 songs.
+- One achievement per self-titled song, awarded the first time you press that
+  song's disc (12 total).
+- **The Full Discography** — press all 12 self-titled songs.
 - **Crowd Control** — craft a microphone for the first time.
 
 ## Tuning / config reference

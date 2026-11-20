@@ -1,0 +1,8 @@
+{
+	"comparator_output": 1,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.the_fathers_seed"
+	},
+	"length_in_seconds": 175.0,
+	"sound_event": "tpi_trading_cards:music_disc.the_fathers_seed"
+}

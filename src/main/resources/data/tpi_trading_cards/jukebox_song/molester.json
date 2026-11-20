@@ -1,0 +1,8 @@
+{
+	"comparator_output": 3,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.molester"
+	},
+	"length_in_seconds": 152.5,
+	"sound_event": "tpi_trading_cards:music_disc.molester"
+}

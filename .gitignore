@@ -26,3 +26,6 @@ run/
 
 # logs
 *.log
+
+# Song audio is copyrighted - never commit it, only bundle it into private builds
+src/main/resources/assets/tpi_trading_cards/sounds/records/*.ogg
