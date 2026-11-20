@@ -1,0 +1,8 @@
+{
+	"comparator_output": 10,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.silence"
+	},
+	"length_in_seconds": 191.7,
+	"sound_event": "tpi_trading_cards:music_disc.silence"
+}

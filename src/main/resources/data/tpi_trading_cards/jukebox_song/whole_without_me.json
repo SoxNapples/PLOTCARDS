@@ -1,0 +1,8 @@
+{
+	"comparator_output": 9,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.whole_without_me"
+	},
+	"length_in_seconds": 172.8,
+	"sound_event": "tpi_trading_cards:music_disc.whole_without_me"
+}

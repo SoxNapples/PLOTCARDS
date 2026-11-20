@@ -1,0 +1,8 @@
+{
+	"comparator_output": 7,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.sober_and_soulless"
+	},
+	"length_in_seconds": 245.8,
+	"sound_event": "tpi_trading_cards:music_disc.sober_and_soulless"
+}

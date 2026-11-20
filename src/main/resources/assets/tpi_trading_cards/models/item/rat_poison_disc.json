@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "tpi_trading_cards:item/rat_poison_disc"
+	}
+}

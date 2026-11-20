@@ -11,6 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.tpi.tradingcards.TPITradingCards;
 import net.tpi.tradingcards.block.ModBlocks;
+import net.tpi.tradingcards.entity.ModEntities;
 
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 
@@ -31,7 +32,13 @@ public final class ModItemGroups {
 					for (Item card : ModItems.ALL_CARDS) {
 						output.accept(card);
 					}
+					for (Item disc : ModDiscs.ALL_DISCS) {
+						output.accept(disc);
+					}
 					output.accept(ModBlocks.MICROPHONE_ITEM);
+					for (Item egg : ModEntities.SPAWN_EGGS) {
+						output.accept(egg);
+					}
 				})
 				.build());
 	}

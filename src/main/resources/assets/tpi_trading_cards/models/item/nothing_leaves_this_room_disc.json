@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "tpi_trading_cards:item/nothing_leaves_this_room_disc"
+	}
+}

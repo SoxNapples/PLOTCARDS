@@ -1,0 +1,8 @@
+{
+	"comparator_output": 3,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.take_me_away"
+	},
+	"length_in_seconds": 220.2,
+	"sound_event": "tpi_trading_cards:music_disc.take_me_away"
+}

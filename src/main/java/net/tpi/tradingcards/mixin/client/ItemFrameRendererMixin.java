@@ -36,7 +36,7 @@ import net.tpi.tradingcards.mixin.TpiCardFrameStateAccess;
  * Makes trading cards render big in item frames, the same way a filled map
  * does, instead of the standard small centered item icon - reusing vanilla's
  * own frame-positioning logic (shadowed/copied below) verbatim from the
- * decompiled 26.2 ItemFrameRenderer#submit, just swapping the final "draw the
+ * decompiled 26.3 ItemFrameRenderer#submit, just swapping the final "draw the
  * map" step for our own textured quad sized to the card's aspect ratio.
  *
  * ItemFrameRenderState only carries pre-extracted render data, not the live
@@ -122,8 +122,8 @@ public abstract class ItemFrameRendererMixin {
 			yRot = 180.0F;
 		}
 
-		poseStack.mulPose(Axis.XP.rotationDegrees(xRot));
-		poseStack.mulPose(Axis.YP.rotationDegrees(yRot));
+		poseStack.rotateDegrees(Axis.XP, xRot);
+		poseStack.rotateDegrees(Axis.YP, yRot);
 		if (!state.frameModel.isEmpty()) {
 			poseStack.pushPose();
 			poseStack.translate(-0.5F, -0.5F, -0.5F);
@@ -137,8 +137,8 @@ public abstract class ItemFrameRendererMixin {
 			poseStack.translate(0.0F, 0.0F, 0.4375F);
 		}
 
-		poseStack.mulPose(Axis.ZP.rotationDegrees(state.rotation * 360.0F / 8.0F));
-		poseStack.mulPose(Axis.ZP.rotationDegrees(180.0F));
+		poseStack.rotateDegrees(Axis.ZP, state.rotation * 360.0F / 8.0F);
+		poseStack.rotateDegrees(Axis.ZP, 180.0F);
 		poseStack.scale(0.0078125F, 0.0078125F, 0.0078125F);
 		poseStack.translate(0.0F, 0.0F, -1.0F);
 

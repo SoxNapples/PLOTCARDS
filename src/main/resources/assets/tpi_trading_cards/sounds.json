@@ -1,0 +1,594 @@
+{
+	"music_disc.wife_beater": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/wife_beater",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.clots": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/clots",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.molester": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/molester",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.abuser": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/abuser",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.bleeders": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/bleeders",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.guts": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/guts",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.small_face": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/small_face",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.the_fathers_seed": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/the_fathers_seed",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.small_face_first_born": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/small_face_first_born",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.bully": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/bully",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.miscarriage": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/miscarriage",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.rat_poison": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/rat_poison",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.neighbors": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/neighbors",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.filth": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/filth",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.unwelcome": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/unwelcome",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.nothing_leaves_this_room": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/nothing_leaves_this_room",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.dear_dad": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/dear_dad",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.premeditated": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/premeditated",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.fiction_religion": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/fiction_religion",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.digging_your_grave": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/digging_your_grave",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.population_control": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/population_control",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.troll": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/troll",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.the_devils_contract": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/the_devils_contract",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.sober_and_soulless": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/sober_and_soulless",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.bible_butcher": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/bible_butcher",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.glad_youre_gone": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/glad_youre_gone",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.hole_in_the_wall": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/hole_in_the_wall",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.dear_old_friend": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/dear_old_friend",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.take_me_away": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/take_me_away",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.runaway": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/runaway",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.pillhead": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/pillhead",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.better_vibes": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/better_vibes",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.my_old_ways": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/my_old_ways",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.die_like_your_brothers": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/die_like_your_brothers",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.mind_controlled": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/mind_controlled",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.time_changes_everything": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/time_changes_everything",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.living_your_dream": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/living_your_dream",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.a_song_about_myself": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/a_song_about_myself",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.forgive_me": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/forgive_me",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.washed_up": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/washed_up",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.happiness_in_self_destruction": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/happiness_in_self_destruction",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.crows": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/crows",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.rigged": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/rigged",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.not_just_breathing": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/not_just_breathing",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.one_last_time": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/one_last_time",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.i_always_wanted_to_leave": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/i_always_wanted_to_leave",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.feel_nothing": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/feel_nothing",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.happy": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/happy",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.the_one_you_loved": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/the_one_you_loved",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.paid_in_full": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/paid_in_full",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.the_sound": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/the_sound",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.disposable_fix": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/disposable_fix",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.letters_to_a_dead_friend": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/letters_to_a_dead_friend",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.fall_again": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/fall_again",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.face_me": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/face_me",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.too_far_gone": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/too_far_gone",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.paradigm": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/paradigm",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.both_to_blame": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/both_to_blame",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.too_heavy": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/too_heavy",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.enemy": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/enemy",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.whole_without_me": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/whole_without_me",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.freed": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/freed",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.divide": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/divide",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.left_behind": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/left_behind",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.forgotten": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/forgotten",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.closure": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/closure",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.dont_look_away": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/dont_look_away",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.all_that_i_can_give": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/all_that_i_can_give",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.been_here_before": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/been_here_before",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.pretend": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/pretend",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.spare_me": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/spare_me",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.silence": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/silence",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.you_get_one": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/you_get_one",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.carved": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/carved",
+				"stream": true
+			}
+		]
+	}
+}

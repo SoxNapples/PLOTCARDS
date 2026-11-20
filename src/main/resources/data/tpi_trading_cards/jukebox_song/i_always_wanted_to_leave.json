@@ -1,0 +1,8 @@
+{
+	"comparator_output": 4,
+	"description": {
+		"translate": "jukebox_song.tpi_trading_cards.i_always_wanted_to_leave"
+	},
+	"length_in_seconds": 198.0,
+	"sound_event": "tpi_trading_cards:music_disc.i_always_wanted_to_leave"
+}
