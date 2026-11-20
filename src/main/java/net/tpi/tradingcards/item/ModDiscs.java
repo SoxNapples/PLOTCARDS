@@ -27,7 +27,7 @@ import net.tpi.tradingcards.TPITradingCards;
  *   - a disc item with the JUKEBOX_PLAYABLE component
  *
  * Only the 12 self-titled-album discs have recipes (9 matching song cards each);
- * the rest of the discography is creative / command only for now.
+ * the rest of the discography is found in the item frame at concert stages.
  *
  * The song audio (.ogg) is deliberately NOT in the git repo - it's the band's
  * copyrighted music. It only goes into jars built for private use. Without it
@@ -40,6 +40,8 @@ public final class ModDiscs {
 
 	private record Song(String id, String album, int year) {
 	}
+
+	private static final String SELF_TITLED = "The Plot in You";
 
 	/** Release order, then track order. */
 	private static final Song[] SONGS = {
@@ -121,12 +123,24 @@ public final class ModDiscs {
 
 	private static final List<Item> DISCS = new ArrayList<>();
 
+	private static final List<Item> STAGE_LOOT = new ArrayList<>();
+
 	/** Every disc, in release + track order - used by the creative tab. */
 	public static final List<Item> ALL_DISCS = Collections.unmodifiableList(DISCS);
 
+	/**
+	 * Discs with no crafting recipe (everything outside the self-titled album, whose 12 discs
+	 * are pressed from song cards). Concert stages hand these out - see StageDiscHandler.
+	 */
+	public static final List<Item> STAGE_LOOT_DISCS = Collections.unmodifiableList(STAGE_LOOT);
+
 	static {
 		for (Song song : SONGS) {
-			DISCS.add(register(song));
+			Item disc = register(song);
+			DISCS.add(disc);
+			if (!SELF_TITLED.equals(song.album())) {
+				STAGE_LOOT.add(disc);
+			}
 		}
 	}
 

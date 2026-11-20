@@ -8,6 +8,7 @@ import net.tpi.tradingcards.block.ModBlocks;
 import net.tpi.tradingcards.buff.CardBuffHandler;
 import net.tpi.tradingcards.config.TPIConfig;
 import net.tpi.tradingcards.entity.ModEntities;
+import net.tpi.tradingcards.structure.StageDiscHandler;
 import net.tpi.tradingcards.item.ModDiscs;
 import net.tpi.tradingcards.item.ModItemGroups;
 import net.tpi.tradingcards.item.ModItems;
@@ -27,6 +28,7 @@ public class TPITradingCards implements ModInitializer {
 		ModItems.initialize();
 		ModDiscs.initialize();
 		ModEntities.initialize();
+		StageDiscHandler.initialize();
 		ModItemGroups.initialize();
 		CardDropHandler.initialize();
 		CardBuffHandler.initialize();

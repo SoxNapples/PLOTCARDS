@@ -114,8 +114,9 @@ release, and comparators read the track number (1–15).
 
 **Pressing a record:** collect **nine copies of the same song card** and
 combine them at a crafting table to press that song's disc. Only the 12
-self-titled-album songs have cards, so only those 12 discs are craftable for
-now; the rest are in the creative tab (or `/give`).
+self-titled-album songs have cards, so only those 12 discs are craftable. The
+other 62 are found in the item frame at **concert stages** (one random disc per
+stage), or in the creative tab / `/give`.
 
 **Audio isn't in this repo.** The songs are copyrighted, so the `.ogg` files
 are git-ignored and only go into privately built jars. Without them the discs
@@ -168,7 +169,11 @@ Concert stages generate naturally in the overworld, on flat land
 (plains, sunflower plains, meadows, savannas, snowy plains and deserts),
 roughly one per 40×40-chunk area. Each one is a full stage with a roof,
 red curtains, lights, note blocks, a microphone at the front of the crowd
-area, and a framed *Wife Beater* disc.
+area, and a framed music disc.
+
+**The framed disc is random:** each stage rolls one of the 62 discs that can't
+be crafted (every song outside the self-titled album). Break the frame to take
+it. This is how you collect the rest of the discography.
 
 - Find the nearest one: `/locate structure tpi_trading_cards:concert_stage`
 - Place one where you're standing: `/place structure tpi_trading_cards:concert_stage`
