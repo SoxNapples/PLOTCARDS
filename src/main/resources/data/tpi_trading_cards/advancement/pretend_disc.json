@@ -4,7 +4,7 @@
 		"crafted_disc": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "tpi_trading_cards:pretend_disc"
+				"recipes": "tpi_trading_cards:pretend_disc"
 			}
 		}
 	},

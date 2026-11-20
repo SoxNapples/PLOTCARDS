@@ -14,7 +14,7 @@ import net.minecraft.world.item.component.TooltipDisplay;
  * all cards - what differs between cards is just the data passed into the
  * constructor (see {@link net.tpi.tradingcards.item.ModItems} for the full list).
  *
- * Verified against the real decompiled 26.2 sources (official/Mojang mappings) -
+ * Verified against the real decompiled 26.3 sources (official/Mojang mappings) -
  * appendHoverText's signature below is confirmed correct for this game version.
  */
 public class TradingCardItem extends Item {

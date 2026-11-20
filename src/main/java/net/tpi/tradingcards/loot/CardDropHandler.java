@@ -15,7 +15,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.boss.enderdragon.EnderDragon;
 import net.minecraft.world.entity.boss.wither.WitherBoss;
 import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.entity.monster.EnderMan;
+import net.minecraft.world.entity.monster.Enderman;
 import net.minecraft.world.entity.monster.warden.Warden;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -146,7 +146,7 @@ public final class CardDropHandler {
 			return TPIConfig.INSTANCE.witherRareOrLegendaryBonusChance;
 		} else if (entity instanceof Warden) {
 			return TPIConfig.INSTANCE.wardenRareOrLegendaryBonusChance;
-		} else if (entity instanceof EnderMan) {
+		} else if (entity instanceof Enderman) {
 			return TPIConfig.INSTANCE.endermanRareOrLegendaryBonusChance;
 		}
 

@@ -1,18 +1,18 @@
 # Plotcards
 
-A Fabric mod for Minecraft 26.2 themed around the band **The Plot in You**.
+A Fabric mod for Minecraft 26.3 themed around the band **The Plot in You**.
 Trading cards drop from mobs you kill, and holding or collecting them unlocks
 real in-game perks — buffs, playable music, and a very aggressive prop mic.
 
 ## Installing
 
-1. Install [Fabric Loader](https://fabricmc.net/use/) 0.19.3+ for Minecraft
-   26.2, with Java 25.
+1. Install [Fabric Loader](https://fabricmc.net/use/) 0.20.1+ for Minecraft
+   26.3, with Java 25.
 2. Grab the matching **Fabric API** jar and drop it in your `mods/` folder.
 3. Grab `tpi_trading_cards-<version>.jar` from this repo's
    [Releases](../../releases) (or `build/libs/` if you built it yourself) and
    drop it in `mods/` too.
-4. Optional: also install the **Audioplayer** mod (2.4.0+26.2) if you want
+4. Optional: also install the **Audioplayer** mod (2.5.0+26.3) if you want
    pressed records (see below) to actually play custom song audio instead of
    just being a reskinned vanilla disc.
 

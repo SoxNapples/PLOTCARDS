@@ -4,7 +4,7 @@
 		"crafted_microphone": {
 			"trigger": "minecraft:recipe_crafted",
 			"conditions": {
-				"recipe_id": "tpi_trading_cards:microphone"
+				"recipes": "tpi_trading_cards:microphone"
 			}
 		}
 	},
