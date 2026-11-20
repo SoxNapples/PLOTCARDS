@@ -160,6 +160,24 @@ He's a real Minecraft cat underneath, so everything cats do, he does.
 Tune with `captainSoxSpawnWeight` (0 = egg only) and `captainSoxCardDropChance`
 in `config/tpi_trading_cards.json`.
 
+## Concert stages
+
+Concert stages generate naturally in the overworld, on flat land
+(plains, sunflower plains, meadows, savannas, snowy plains and deserts),
+roughly one per 40×40-chunk area. Each one is a full stage with a roof,
+red curtains, lights, note blocks, a microphone at the front of the crowd
+area, and a framed *Wife Beater* disc.
+
+- Find the nearest one: `/locate structure tpi_trading_cards:concert_stage`
+- Place one where you're standing: `/place structure tpi_trading_cards:concert_stage`
+- Stages only appear in **newly generated chunks**. Explore new terrain, or
+  start a new world.
+
+The build lives at `src/main/resources/data/tpi_trading_cards/structure/concert_stage.nbt`
+(a normal structure-block file, so you can also load it with a structure
+block). Spacing, biomes and rarity are plain JSON under
+`data/tpi_trading_cards/worldgen/` and `tags/worldgen/biome/has_structure/`.
+
 ## The microphone
 
 A craftable prop for the true frontman experience:
