@@ -166,5 +166,13 @@
 	"item.tpi_trading_cards.you_get_one_disc": "Music Disc",
 	"jukebox_song.tpi_trading_cards.you_get_one": "The Plot in You - You Get One",
 	"item.tpi_trading_cards.carved_disc": "Music Disc",
-	"jukebox_song.tpi_trading_cards.carved": "The Plot in You - Carved"
+	"jukebox_song.tpi_trading_cards.carved": "The Plot in You - Carved",
+	"entity.tpi_trading_cards.landon_tewers": "Landon Tewers",
+	"item.tpi_trading_cards.landon_tewers_spawn_egg": "Landon Tewers Spawn Egg",
+	"entity.tpi_trading_cards.josh_childress": "Josh Childress",
+	"item.tpi_trading_cards.josh_childress_spawn_egg": "Josh Childress Spawn Egg",
+	"entity.tpi_trading_cards.ethan_yoder": "Ethan Yoder",
+	"item.tpi_trading_cards.ethan_yoder_spawn_egg": "Ethan Yoder Spawn Egg",
+	"entity.tpi_trading_cards.michael_cooper": "Mikey Cooper",
+	"item.tpi_trading_cards.michael_cooper_spawn_egg": "Mikey Cooper Spawn Egg"
 }

@@ -64,6 +64,14 @@ public final class TPIConfig {
 	 */
 	public double lootingBonusPerLevel = 0.5;
 
+	/**
+	 * Natural spawn weight for EACH band member NPC in overworld biomes (same scale as
+	 * vanilla animals - e.g. sheep 12, cow 8, horse 5). They only spawn during the day,
+	 * on grass under open sky, and wander off (despawn) when no player is nearby.
+	 * Set to 0 to disable natural spawning (spawn eggs still work). Needs a restart.
+	 */
+	public int bandMemberSpawnWeight = 1;
+
 	public static void load() {
 		if (Files.exists(CONFIG_PATH)) {
 			try (Reader reader = Files.newBufferedReader(CONFIG_PATH, StandardCharsets.UTF_8)) {

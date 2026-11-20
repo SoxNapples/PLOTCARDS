@@ -124,6 +124,24 @@ still exist and spin in a jukebox, just silently. Audio goes in
 (mono Ogg Vorbis), with each song's length in
 `src/main/resources/data/tpi_trading_cards/jukebox_song/<song_id>.json`.
 
+## The band (NPCs)
+
+**Landon Tewers, Josh Childress, Ethan Yoder and Mikey Cooper** wander the
+overworld as friendly NPCs. They use the real player model with their own
+skins, and their names float above their heads like a player's.
+
+- **Daytime only:** they spawn naturally during the day, on grass under open
+  sky, in any overworld biome. They're rare: each member has the spawn weight
+  of a donkey by default.
+- **Friendly:** they stroll around, look at nearby players and run from hostile
+  mobs. Hit one and it panics like a villager; they never fight back.
+- **Wanderers:** like a wandering trader, they leave (despawn) once nobody's
+  nearby, so random spawns don't pile up. Use a **name tag** on one to keep it.
+- **Spawn eggs** for all four are in the creative tab.
+
+Tune or disable natural spawning with `bandMemberSpawnWeight` in
+`config/tpi_trading_cards.json` (0 = eggs only; needs a restart).
+
 ## The microphone
 
 A craftable prop for the true frontman experience:
