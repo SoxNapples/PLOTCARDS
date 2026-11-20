@@ -7,6 +7,7 @@ import net.fabricmc.api.ModInitializer;
 import net.tpi.tradingcards.block.ModBlocks;
 import net.tpi.tradingcards.buff.CardBuffHandler;
 import net.tpi.tradingcards.config.TPIConfig;
+import net.tpi.tradingcards.item.ModDiscs;
 import net.tpi.tradingcards.item.ModItemGroups;
 import net.tpi.tradingcards.item.ModItems;
 import net.tpi.tradingcards.loot.CardDropHandler;
@@ -23,6 +24,7 @@ public class TPITradingCards implements ModInitializer {
 
 		ModBlocks.initialize();
 		ModItems.initialize();
+		ModDiscs.initialize();
 		ModItemGroups.initialize();
 		CardDropHandler.initialize();
 		CardBuffHandler.initialize();

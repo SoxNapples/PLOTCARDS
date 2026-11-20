@@ -1,6 +1,5 @@
 {
 	"itemGroup.tpi_trading_cards.main": "The Plot in You Cards",
-
 	"item.tpi_trading_cards.divide_card": "Divide",
 	"item.tpi_trading_cards.left_behind_card": "Left Behind",
 	"item.tpi_trading_cards.forgotten_card": "Forgotten",
@@ -13,14 +12,35 @@
 	"item.tpi_trading_cards.silence_card": "Silence",
 	"item.tpi_trading_cards.you_get_one_card": "You Get One",
 	"item.tpi_trading_cards.carved_card": "Carved",
-
 	"item.tpi_trading_cards.landon_tewers_card": "Landon Tewers",
 	"item.tpi_trading_cards.josh_childress_card": "Josh Childress",
 	"item.tpi_trading_cards.ethan_yoder_card": "Ethan Yoder",
 	"item.tpi_trading_cards.michael_cooper_card": "Mikey Cooper",
-
 	"item.tpi_trading_cards.sox_card": "Sox",
-
 	"block.tpi_trading_cards.microphone": "Microphone",
-	"item.tpi_trading_cards.microphone": "Microphone"
+	"item.tpi_trading_cards.microphone": "Microphone",
+	"item.tpi_trading_cards.divide_disc": "Music Disc",
+	"jukebox_song.tpi_trading_cards.divide": "The Plot in You - Divide",
+	"item.tpi_trading_cards.left_behind_disc": "Music Disc",
+	"jukebox_song.tpi_trading_cards.left_behind": "The Plot in You - Left Behind",
+	"item.tpi_trading_cards.forgotten_disc": "Music Disc",
+	"jukebox_song.tpi_trading_cards.forgotten": "The Plot in You - Forgotten",
+	"item.tpi_trading_cards.closure_disc": "Music Disc",
+	"jukebox_song.tpi_trading_cards.closure": "The Plot in You - Closure",
+	"item.tpi_trading_cards.dont_look_away_disc": "Music Disc",
+	"jukebox_song.tpi_trading_cards.dont_look_away": "The Plot in You - Don't Look Away",
+	"item.tpi_trading_cards.all_that_i_can_give_disc": "Music Disc",
+	"jukebox_song.tpi_trading_cards.all_that_i_can_give": "The Plot in You - All that I Can Give",
+	"item.tpi_trading_cards.been_here_before_disc": "Music Disc",
+	"jukebox_song.tpi_trading_cards.been_here_before": "The Plot in You - Been Here Before",
+	"item.tpi_trading_cards.pretend_disc": "Music Disc",
+	"jukebox_song.tpi_trading_cards.pretend": "The Plot in You - Pretend",
+	"item.tpi_trading_cards.spare_me_disc": "Music Disc",
+	"jukebox_song.tpi_trading_cards.spare_me": "The Plot in You - Spare Me",
+	"item.tpi_trading_cards.silence_disc": "Music Disc",
+	"jukebox_song.tpi_trading_cards.silence": "The Plot in You - Silence",
+	"item.tpi_trading_cards.you_get_one_disc": "Music Disc",
+	"jukebox_song.tpi_trading_cards.you_get_one": "The Plot in You - You Get One",
+	"item.tpi_trading_cards.carved_disc": "Music Disc",
+	"jukebox_song.tpi_trading_cards.carved": "The Plot in You - Carved"
 }

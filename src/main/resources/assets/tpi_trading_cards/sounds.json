@@ -1,0 +1,98 @@
+{
+	"music_disc.divide": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/divide",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.left_behind": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/left_behind",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.forgotten": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/forgotten",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.closure": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/closure",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.dont_look_away": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/dont_look_away",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.all_that_i_can_give": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/all_that_i_can_give",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.been_here_before": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/been_here_before",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.pretend": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/pretend",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.spare_me": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/spare_me",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.silence": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/silence",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.you_get_one": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/you_get_one",
+				"stream": true
+			}
+		]
+	},
+	"music_disc.carved": {
+		"sounds": [
+			{
+				"name": "tpi_trading_cards:records/carved",
+				"stream": true
+			}
+		]
+	}
+}

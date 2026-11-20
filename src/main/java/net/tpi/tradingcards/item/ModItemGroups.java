@@ -31,6 +31,9 @@ public final class ModItemGroups {
 					for (Item card : ModItems.ALL_CARDS) {
 						output.accept(card);
 					}
+					for (Item disc : ModDiscs.ALL_DISCS) {
+						output.accept(disc);
+					}
 					output.accept(ModBlocks.MICROPHONE_ITEM);
 				})
 				.build());

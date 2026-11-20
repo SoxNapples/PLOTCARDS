@@ -12,11 +12,8 @@ real in-game perks — buffs, playable music, and a very aggressive prop mic.
 3. Grab `tpi_trading_cards-<version>.jar` from this repo's
    [Releases](../../releases) (or `build/libs/` if you built it yourself) and
    drop it in `mods/` too.
-4. Optional: also install the **Audioplayer** mod (2.5.0+26.3) if you want
-   pressed records (see below) to actually play custom song audio instead of
-   just being a reskinned vanilla disc.
 
-Everyone in the world/server needs the same mod (and Audioplayer, if used) —
+Everyone in the world/server needs the same mod —
 it isn't client-only.
 
 ## The 17 cards
@@ -110,11 +107,15 @@ the single best one counts.
 ## Pressing a record
 
 Collect **nine copies of the same song card** and combine them at a
-crafting table to press that song into a real, playable music disc —
-custom name and all. Drop it in a jukebox like any vanilla disc. With the
-**Audioplayer** mod installed alongside this one, the disc plays that song's
-actual audio; without it, it still works as a normal (silent-track) disc
-with the right name on it.
+crafting table to press that song into its own music disc. Drop it in a
+jukebox like any vanilla disc and it plays the song — the audio is built
+into the mod, so no Audioplayer or voice chat mod is needed. The disc's
+tooltip and the jukebox "Now Playing" line show the song title, and
+comparators read a different signal strength per track (1–12, in album order).
+
+Song audio lives in `src/main/resources/assets/tpi_trading_cards/sounds/records/<song>.ogg`
+(Ogg Vorbis). Each song's length is set in
+`src/main/resources/data/tpi_trading_cards/jukebox_song/<song>.json`.
 
 ## The microphone
 
