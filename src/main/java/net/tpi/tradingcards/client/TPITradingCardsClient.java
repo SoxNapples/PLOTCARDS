@@ -16,7 +16,7 @@ public class TPITradingCardsClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		for (EntityType<BandMemberEntity> type : ModEntities.BAND_MEMBERS) {
 			String member = BuiltInRegistries.ENTITY_TYPE.getKey(type).getPath();
-			Identifier skin = Identifier.fromNamespaceAndPath(TPITradingCards.MOD_ID, "textures/entity/band/" + member + ".png");
+			Identifier skin = Identifier.fromNamespaceAndPath(TPITradingCards.MOD_ID, "entity/band/" + member);
 			EntityRendererRegistry.register(type, context -> new BandMemberRenderer(context, skin));
 		}
 	}
