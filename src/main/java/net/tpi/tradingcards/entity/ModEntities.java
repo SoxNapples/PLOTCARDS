@@ -1,5 +1,6 @@
 package net.tpi.tradingcards.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
@@ -14,13 +15,15 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.SpawnPlacementTypes;
 import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.animal.Animal;
+import net.minecraft.world.entity.animal.feline.Cat;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.SpawnEggItem;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.tpi.tradingcards.TPITradingCards;
 import net.tpi.tradingcards.config.TPIConfig;
 
-/** Registers the four band member NPCs, their spawn eggs, attributes and natural spawning. */
+/** Registers the band member NPCs and Captain Sox: entity types, spawn eggs, attributes and natural spawning. */
 public final class ModEntities {
 
 	private ModEntities() {
@@ -33,7 +36,26 @@ public final class ModEntities {
 
 	public static final List<EntityType<BandMemberEntity>> BAND_MEMBERS = List.of(LANDON_TEWERS, JOSH_CHILDRESS, ETHAN_YODER, MICHAEL_COOPER);
 
-	public static final List<Item> SPAWN_EGGS = BAND_MEMBERS.stream().map(ModEntities::registerSpawnEgg).toList();
+	public static final EntityType<CaptainSoxEntity> CAPTAIN_SOX = Registry.register(BuiltInRegistries.ENTITY_TYPE, key("captain_sox"),
+			EntityType.Builder.of(CaptainSoxEntity::new, MobCategory.CREATURE)
+					.sized(0.6F, 0.7F)
+					.eyeHeight(0.35F)
+					.passengerAttachments(0.5125F)
+					.clientTrackingRange(8)
+					.build(key("captain_sox")));
+
+	/** Band member eggs, then Captain Sox's - used by the creative tab. */
+	public static final List<Item> SPAWN_EGGS;
+
+	static {
+		List<Item> eggs = new ArrayList<>(BAND_MEMBERS.stream().map(ModEntities::registerSpawnEgg).toList());
+		eggs.add(registerSpawnEgg(CAPTAIN_SOX));
+		SPAWN_EGGS = List.copyOf(eggs);
+	}
+
+	private static ResourceKey<EntityType<?>> key(String name) {
+		return ResourceKey.create(Registries.ENTITY_TYPE, Identifier.fromNamespaceAndPath(TPITradingCards.MOD_ID, name));
+	}
 
 	private static EntityType<BandMemberEntity> register(String name) {
 		ResourceKey<EntityType<?>> key = ResourceKey.create(Registries.ENTITY_TYPE, Identifier.fromNamespaceAndPath(TPITradingCards.MOD_ID, name));
@@ -45,7 +67,7 @@ public final class ModEntities {
 		return Registry.register(BuiltInRegistries.ENTITY_TYPE, key, type);
 	}
 
-	private static Item registerSpawnEgg(EntityType<BandMemberEntity> type) {
+	private static Item registerSpawnEgg(EntityType<?> type) {
 		Identifier typeId = BuiltInRegistries.ENTITY_TYPE.getKey(type);
 		ResourceKey<Item> key = ResourceKey.create(Registries.ITEM,
 				Identifier.fromNamespaceAndPath(TPITradingCards.MOD_ID, typeId.getPath() + "_spawn_egg"));
@@ -62,6 +84,15 @@ public final class ModEntities {
 				BiomeModifications.addSpawn(BiomeSelectors.foundInOverworld(), MobCategory.CREATURE, type, weight, 1, 1);
 			}
 		}
-		TPITradingCards.LOGGER.info("Registered {} band member NPCs (spawn weight {} each)", BAND_MEMBERS.size(), weight);
+
+		FabricDefaultAttributeRegistry.register(CAPTAIN_SOX, Cat.createAttributes());
+		SpawnPlacements.register(CAPTAIN_SOX, SpawnPlacementTypes.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+				Animal::checkAnimalSpawnRules);
+		int soxWeight = TPIConfig.INSTANCE.captainSoxSpawnWeight;
+		if (soxWeight > 0) {
+			BiomeModifications.addSpawn(BiomeSelectors.foundInOverworld(), MobCategory.CREATURE, CAPTAIN_SOX, soxWeight, 1, 1);
+		}
+		TPITradingCards.LOGGER.info("Registered {} band member NPCs (spawn weight {} each) and Captain Sox (spawn weight {})",
+				BAND_MEMBERS.size(), weight, soxWeight);
 	}
 }

@@ -72,6 +72,16 @@ public final class TPIConfig {
 	 */
 	public int bandMemberSpawnWeight = 1;
 
+	/**
+	 * Natural spawn weight for Captain Sox (the tuxedo cat in a pirate hat) in overworld
+	 * biomes, same scale as above. Spawns any time of day on grass. 0 = spawn egg only.
+	 * Needs a restart.
+	 */
+	public int captainSoxSpawnWeight = 1;
+
+	/** Chance (0.0-1.0) that Captain Sox drops the Sox trading card when he dies. Default 5%. */
+	public double captainSoxCardDropChance = 0.05;
+
 	public static void load() {
 		if (Files.exists(CONFIG_PATH)) {
 			try (Reader reader = Files.newBufferedReader(CONFIG_PATH, StandardCharsets.UTF_8)) {

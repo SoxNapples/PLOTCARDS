@@ -174,5 +174,7 @@
 	"entity.tpi_trading_cards.ethan_yoder": "Ethan Yoder",
 	"item.tpi_trading_cards.ethan_yoder_spawn_egg": "Ethan Yoder Spawn Egg",
 	"entity.tpi_trading_cards.michael_cooper": "Mikey Cooper",
-	"item.tpi_trading_cards.michael_cooper_spawn_egg": "Mikey Cooper Spawn Egg"
+	"item.tpi_trading_cards.michael_cooper_spawn_egg": "Mikey Cooper Spawn Egg",
+	"entity.tpi_trading_cards.captain_sox": "Captain Sox",
+	"item.tpi_trading_cards.captain_sox_spawn_egg": "Captain Sox Spawn Egg"
 }

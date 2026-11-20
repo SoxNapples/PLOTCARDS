@@ -142,6 +142,24 @@ skins, and their names float above their heads like a player's.
 Tune or disable natural spawning with `bandMemberSpawnWeight` in
 `config/tpi_trading_cards.json` (0 = eggs only; needs a restart).
 
+## Captain Sox
+
+A black-and-white tuxedo cat in a pirate hat, the mascot from the Sox card.
+He's a real Minecraft cat underneath, so everything cats do, he does.
+
+- **Spawning:** occasionally on grass anywhere in the overworld, day or night
+  (about as rare as a donkey). An untamed Captain Sox wanders off when nobody's
+  around, like any stray cat. There's also a spawn egg in the creative tab.
+- **Taming:** feed him **raw or cooked cod, salmon or chicken** (each bite has
+  the usual 1-in-3 cat chance). Once tamed he sits, follows, sleeps on your
+  bed, scares off creepers and phantoms, and heals from the same foods.
+- **One of a kind:** he doesn't breed.
+- **Card drop:** small chance (5% by default) to drop the **Sox** trading card
+  when he dies.
+
+Tune with `captainSoxSpawnWeight` (0 = egg only) and `captainSoxCardDropChance`
+in `config/tpi_trading_cards.json`.
+
 ## The microphone
 
 A craftable prop for the true frontman experience:
