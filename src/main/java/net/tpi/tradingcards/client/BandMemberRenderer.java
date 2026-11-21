@@ -14,7 +14,7 @@ import net.minecraft.world.entity.player.PlayerSkin;
 import net.tpi.tradingcards.entity.BandMemberEntity;
 
 /**
- * Renders a band member with the real (wide-arm) player model - including the
+ * Renders a band member with the real player model (wide or slim arms) - including the
  * outer skin layer (hat, jacket, sleeves, pants) - and a standard 64x64 player
  * skin at textures/entity/band/<member>.png. Scaled like a real player.
  *
@@ -28,11 +28,15 @@ public class BandMemberRenderer extends HumanoidMobRenderer<BandMemberEntity, Av
 	private final Identifier texture;
 	private final PlayerSkin skin;
 
-	/** @param assetId skin id without "textures/" and ".png", e.g. tpi_trading_cards:entity/band/landon_tewers */
-	public BandMemberRenderer(EntityRendererProvider.Context context, Identifier assetId) {
-		super(context, new PlayerModel(context.bakeLayer(ModelLayers.PLAYER), false), 0.5F);
+	/**
+	 * @param assetId skin id without "textures/" and ".png", e.g. tpi_trading_cards:entity/band/landon_tewers
+	 * @param slim    true for the 3px-arm (Alex-style) model, false for 4px (Steve-style) arms
+	 */
+	public BandMemberRenderer(EntityRendererProvider.Context context, Identifier assetId, boolean slim) {
+		super(context, new PlayerModel(context.bakeLayer(slim ? ModelLayers.PLAYER_SLIM : ModelLayers.PLAYER), slim), 0.5F);
 		this.texture = assetId.withPath(path -> "textures/" + path + ".png");
-		this.skin = new PlayerSkin(new ClientAsset.ResourceTexture(assetId, this.texture), null, null, PlayerModelType.WIDE, true);
+		this.skin = new PlayerSkin(new ClientAsset.ResourceTexture(assetId, this.texture), null, null,
+				slim ? PlayerModelType.SLIM : PlayerModelType.WIDE, true);
 	}
 
 	@Override

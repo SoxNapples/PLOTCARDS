@@ -17,7 +17,8 @@ public class TPITradingCardsClient implements ClientModInitializer {
 		for (EntityType<BandMemberEntity> type : ModEntities.BAND_MEMBERS) {
 			String member = BuiltInRegistries.ENTITY_TYPE.getKey(type).getPath();
 			Identifier skin = Identifier.fromNamespaceAndPath(TPITradingCards.MOD_ID, "entity/band/" + member);
-			EntityRendererRegistry.register(type, context -> new BandMemberRenderer(context, skin));
+			boolean slim = type != ModEntities.JOSH_CHILDRESS; // Josh keeps wide (4px) arms; everyone else is slim (3px)
+			EntityRendererRegistry.register(type, context -> new BandMemberRenderer(context, skin, slim));
 		}
 		EntityRendererRegistry.register(ModEntities.CAPTAIN_SOX, CaptainSoxRenderer::new);
 	}

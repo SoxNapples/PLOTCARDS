@@ -128,7 +128,7 @@ still exist and spin in a jukebox, just silently. Audio goes in
 ## The band (NPCs)
 
 **Landon Tewers, Josh Childress, Ethan Yoder and Mikey Cooper** wander the
-overworld as friendly NPCs. They use the real player model with their own
+overworld as friendly NPCs. They use the real player model (slim 3px arms, except Josh with classic 4px arms) with their own
 skins, and their names float above their heads like a player's.
 
 - **Daytime only:** they spawn naturally during the day, on grass under open
